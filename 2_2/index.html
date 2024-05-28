@@ -4,13 +4,25 @@
   <meta charset="UTF-8">
   <title>クリックイベントと切り替え</title>
   <link rel="stylesheet" type="text/css" href="base.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  <script>
-  $(function(){
-    $('#wrapper').css('color', 'red'); // 色を赤に変更
-    $('#wrapper').css({
-    'font-weight': 'bold',
-    'background-color': 'red'
-  });
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+  <script>
+    $(function(){
+      $('#button1').on('click', function(){
+        $('#button1').css({
+        'background-color': 'red'
+        });
+      })
+      $('#button2').on('click', function(){
+        $('#button2').css({
+        'background-color': 'red'
+        });
+      })
+      $('#button3').on('click', function(){
+        $('#button1').css({
+        'background-color': 'red'
+        });
+      })
+    })
   </script>
 </head>
 <body>
