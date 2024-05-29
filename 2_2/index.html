@@ -9,17 +9,26 @@
     $(function(){
       $('#button1').on('click', function(){
         $('#button1').css({
-        'background-color': 'red'
+          'background-color': 'red'
+        });
+        $('#button2, #button3').css({
+        'background-color': '#fdd'
         });
       })
       $('#button2').on('click', function(){
         $('#button2').css({
-        'background-color': 'red'
+          'background-color': 'red'
+        });
+        $('#button1, #button3').css({
+        'background-color': '#fdd'
         });
       })
       $('#button3').on('click', function(){
-        $('#button1').css({
-        'background-color': 'red'
+        $('#button3').css({
+          'background-color': 'red'
+        });
+        $('#button1, #button2').css({
+        'background-color': '#fdd'
         });
       })
     })
